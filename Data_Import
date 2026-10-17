@@ -4,7 +4,7 @@
 
 **1. Create tables** with explicit data types and keys.
 
-```sql
+~~~~sql
 DROP TABLE IF EXISTS olist_customers_dataset;
 CREATE TABLE olist_customers_dataset (
   customer_id              VARCHAR(32) PRIMARY KEY,
@@ -98,7 +98,7 @@ CREATE TABLE product_category_name_translation (
   product_category_name         VARCHAR(100) PRIMARY KEY,
   product_category_name_english VARCHAR(100)
 );
-```
+~~~
 
 **2. Load data** with `LOAD DATA LOCAL INFILE`; empty values converted to `NULL`.
 
